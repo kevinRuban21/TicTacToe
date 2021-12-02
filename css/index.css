@@ -1,0 +1,51 @@
+body {
+  background-color: #811818;
+  color: #eaeaea;
+}
+
+.judul {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Viga", sans-serif;
+}
+
+#kotak {
+  border: 5px solid #ccc;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 32.5em;
+}
+
+#tombol {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.depan {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  border: 1px solid #000;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+}
+
+.belakang {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  border: 1px solid #000;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+  font-size: 70px;
+}
+
+#ket {
+  text-align: center;
+  font-family: "Viga", sans-serif;
+}
