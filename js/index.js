@@ -1,6 +1,6 @@
 let pemain = "X";
 
-document.getElementById("ket").innerHTML = "Player: " + pemain;
+document.getElementById("ket").innerHTML = "Player : " + pemain;
 
 function klikTombol(x){
     document.getElementById("btn"+x+"D").style.transform = "perspective(600px)rotateY(-180deg)";
@@ -10,11 +10,11 @@ function klikTombol(x){
     document.getElementById("btn"+x+"B").value = pemain;
     document.getElementById("btn"+x+"B").disabled = "disabled";
     if (pemain=="X"){
-        document.getElementById("ket").innerHTML = "Player: O";
+        document.getElementById("ket").innerHTML = "Player : O";
         cekMenang();
         pemain = "O";
     }else{
-        document.getElementById("ket").innerHTML = "Player: X";
+        document.getElementById("ket").innerHTML = "Player : X";
         cekMenang();
         pemain = "X";
     }
@@ -49,19 +49,19 @@ function klikTombol(x){
         let x = 1;
         function animasi(){
             if (x==1){
-                document.getElementById("btn"+a+"B").style.background = "#a25959";
-                document.getElementById("btn"+b+"B").style.background = "#925151";
-                document.getElementById("btn"+c+"B").style.background = "#734040";
+                document.getElementById("btn"+a+"B").style.background = "#618264";
+                document.getElementById("btn"+b+"B").style.background = "#B0D9B1";
+                document.getElementById("btn"+c+"B").style.background = "#D0E7D2";
                 x=2;
             } else if (x==2){
-                document.getElementById("btn"+c+"B").style.background = "#a25959";
-                document.getElementById("btn"+a+"B").style.background = "#925151";
-                document.getElementById("btn"+b+"B").style.background = "#734040";
+                document.getElementById("btn"+c+"B").style.background = "#618264";
+                document.getElementById("btn"+a+"B").style.background = "#B0D9B1";
+                document.getElementById("btn"+b+"B").style.background = "#D0E7D2";
                 x=3;
             } else if (x==3){
-                document.getElementById("btn"+b+"B").style.background = "#a25959";
-                document.getElementById("btn"+c+"B").style.background = "#925151";
-                document.getElementById("btn"+a+"B").style.background = "#734040";
+                document.getElementById("btn"+b+"B").style.background = "#618264";
+                document.getElementById("btn"+c+"B").style.background = "#B0D9B1";
+                document.getElementById("btn"+a+"B").style.background = "#D0E7D2";
                 x=1;
             }
         }
